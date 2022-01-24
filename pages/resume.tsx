@@ -15,7 +15,7 @@ const resume = () => {
 
             <p>Escola Secundária Emídio Navarro (2019-2022)</p>
 
-            <p className="my-6">I'm currently studying IT systems manager and programmer from Escola Secundária Emídio Navarro.</p>
+            <p className="my-6">I m currently studying IT systems manager and programmer from Escola Secundária Emídio Navarro.</p>
           </div>
         </motion.div>
 
