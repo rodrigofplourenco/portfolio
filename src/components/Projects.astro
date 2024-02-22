@@ -1,0 +1,39 @@
+---
+  const PROJECTS = [
+    {
+      title: 'Wired Alliance',
+      description: 'Project built to help people of habblet.city with wireds programming!',
+      link: 'https://wired.blet.in/',
+      image: '/projects/wiredalliance.png',
+      tags: ['HTML', 'Tailwind', 'Typescript', 'Angular']
+    },
+    {
+      title: 'Move It',
+      description: 'Project built to help with studying using the pomodore technique!',
+      link: 'https://moveitxs.vercel.app/',
+      image: '/projects/moveit.png',
+      tags: ['HTML', 'CSS', 'Javascript', 'React.js']
+    }
+  ]
+---
+
+{
+  PROJECTS.map(({ title, description, tags, image, link }) => (
+    <article>
+      <a class="text-2xl font-semibold text-yellow-200 mb-2" href={link} target="_blank">{title}</a>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+
+      <ul class="flex gap-x-2 flex-row mb-2">
+        {tags.map(tag => (
+          <li class="flex gap-x-2 rounded-full text-xs py-1 px-2 border border-white/10">{tag}</li>
+        ))}
+      </ul>
+
+      <img 
+        class="rounded shadow-2xl shadow-white/10"
+        src={image} 
+        alt={`${title} project's image`}
+      >
+    </article>
+  ))
+}

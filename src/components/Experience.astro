@@ -1,0 +1,34 @@
+---
+  import ExperienceItem from "./ExperienceItem.astro"
+
+  const EXPERIENCE = [
+    {
+      date: 'Now...',
+      title: 'Senior Full Stack Enginneer - LindaDevelop',
+      description: 'Javascript, Typescript, Nest.js, Tailwind, GitLab CI, Docker, Kubernetes, React, Next.js',
+      link: '#'
+    },
+    {
+      date: 'Oct 2022',
+      title: 'Android Enginneer - 2Play+',
+      description: 'Javascript, Typescript, Angular, Express, Nest.js, Tailwind, GitLab CI, Docker, Dart, Flutter, React',
+      link: '#'
+    },
+    {
+      date: 'May 2022',
+      title: 'Software Enginneer - ERPGap',
+      description: 'Vue.js, Nuxt.js, VueStoreFront, Lektor, Odoo, Python, Linux, SQL, Postgres',
+      link: '#'
+    }
+  ]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map(experience => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
